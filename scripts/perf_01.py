@@ -1,6 +1,9 @@
 import timeit, sys
 import functools as ft
 import memory_profiler
+
+sys.path.append('..')
+
 from mlwpy import *
 
 def knn_go(train_ftrs, test_ftrs, train_tgt):

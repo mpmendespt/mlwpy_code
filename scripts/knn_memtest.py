@@ -1,5 +1,9 @@
 import memory_profiler, sys
-from mlwpy import *
+
+sys.path.append('..')
+
+#from mlwpy import *
+from  mlwpy import *
 
 @memory_profiler.profile(precision=4)
 def knn_memtest(train, train_tgt, test):
